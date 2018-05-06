@@ -133,7 +133,7 @@ public class MenuActivity extends AppCompatActivity
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     SharedPreferences sharedPreferences = getSharedPreferences("USER", MODE_PRIVATE);
-                    sharedPreferences.edit().remove("CPF").apply();
+                    sharedPreferences.edit().clear().commit();
                     android.os.Process.killProcess(android.os.Process.myPid());
                 }
             }, null);
@@ -141,11 +141,12 @@ public class MenuActivity extends AppCompatActivity
 
         try {
             fragment = (Fragment) fragmentClass.newInstance();
+            fragmentTransaction(fragment, false);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        fragmentTransaction(fragment, false);
+
         return true;
     }
 
