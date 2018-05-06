@@ -2,24 +2,31 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.vision">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppThemeDark">
+        android:supportsRtl="true">
         <activity
-            android:name=".MenuActivity"
+            android:name=".activity.MenuActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".SplashActivty">
-
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SplashActivty"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme" />
     </application>
+
 </manifest>

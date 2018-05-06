@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="4dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvGoal"
+                android:layout_width="234dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="76dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="16dp"
+                android:text="Objetivo" />
+
+            <TextView
+                android:id="@+id/tvPrize"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvStatus"
+                android:layout_alignStart="@+id/tvGoal"
+                android:layout_marginBottom="-1dp"
+                android:text="Descrição" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:text="1/13"
+                android:textColor="#f3a4a0a0"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/ivGoal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/vd_completed_goal" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
