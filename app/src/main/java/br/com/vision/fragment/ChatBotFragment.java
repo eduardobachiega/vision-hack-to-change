@@ -64,6 +64,7 @@ public class ChatBotFragment extends Fragment {
         rvMessages.setAdapter(adapter);
         rvMessages.setLayoutManager(new LinearLayoutManager(getContext()));
         ((FloatingActionButton) getActivity().findViewById(R.id.fab)).hide();
+        messages.add(new Chat("Já cadastrou seus gastos hoje?", true));
         return view;
     }
 

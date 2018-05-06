@@ -23,9 +23,10 @@
                 android:id="@+id/tvGoal"
                 android:layout_width="234dp"
                 android:layout_height="22dp"
-                android:layout_marginEnd="8dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginEnd="10dp"
                 android:layout_marginLeft="76dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginStart="76dp"
                 android:layout_marginTop="16dp"
                 android:text="Objetivo" />
